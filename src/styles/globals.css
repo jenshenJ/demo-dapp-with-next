@@ -1,33 +1,26 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
 body {
+  height: 100%;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgba(16, 22, 31, 0.92);
+  color: white;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -35,8 +28,51 @@ a {
   text-decoration: none;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  >header {
+    margin-bottom: 10px;
+  }
+}
+
+.react-json-view {
+  background: rgba(24, 32, 48, 0.98) !important;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(16, 22, 31, 0.13);
+  padding: 18px 18px 14px 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  overflow-x: auto;
+  font-size: 15px;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.find-transaction-demo__json-view {
+  background: rgba(24, 32, 48, 0.98);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(16, 22, 31, 0.13);
+  padding: 18px 18px 14px 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  overflow-x: auto;
+  font-size: 15px;
+  word-break: break-all;
+  white-space: pre-wrap;
 }

@@ -1,0 +1,7 @@
+{
+    "url": "http://localhost:3002/",
+    "name": "Demo Dapp with Next.js",
+    "iconUrl": "http://localhost:3002/apple-touch-icon.png",
+    "termsOfUseUrl": "http://localhost:3002/terms-of-use.txt",
+    "privacyPolicyUrl": "http://localhost:3002/privacy-policy.txt"
+}
